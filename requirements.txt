@@ -64,3 +64,4 @@ slumber==0.4.2
 uuid==1.30
 Pygments==1.5
 gunicorn==19.1
+six
