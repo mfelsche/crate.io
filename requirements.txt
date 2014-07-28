@@ -16,7 +16,7 @@ chardet==1.0.1
 -e git+https://github.com/crateio/crate.web.git#egg=crate.web
 -e git+https://github.com/crateio/crate.pypi.git#egg=crate.pypi
 eventlet==0.9.16
-django-admin-tools==0.4.1
+django-admin-tools==0.5.1
 django-appconf==0.5
 django-celery==2.5.5
 -e git+https://github.com/toastdriven/django-haystack.git#egg=django-haystack
@@ -48,7 +48,7 @@ oauth2==1.5.211
 oauthlib==0.1.3
 pinax-utils==1.0b1.dev3
 psycopg2==2.4.5
-py-bcrypt==0.2
+py-bcrypt==0.4
 pyasn1==0.1.3
 pyelasticsearch==0.2
 python-dateutil==1.5
