@@ -14,7 +14,7 @@ celery-haystack==0.4
 certifi==0.0.8
 chardet==1.0.1
 -e git+https://github.com/crateio/crate.web.git#egg=crate.web
--e git+https://github.com/crateio/crate.pypi.git#egg=crate.pypi
+-e git+https://github.com/mfelsche/crate.pypi.git#egg=crate.pypi
 eventlet==0.9.16
 django-admin-tools==0.5.1
 django-appconf==0.5
