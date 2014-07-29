@@ -1,5 +1,5 @@
-Dozer==0.1
-PIL==1.1.7
+Dozer>=0.1
+Pillow>=1.1.7
 Paste==1.7.5.1
 WebOb==1.2b3
 django-debug-toolbar==0.9.4
