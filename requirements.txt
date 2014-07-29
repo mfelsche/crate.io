@@ -1,7 +1,7 @@
 --extra-index-url=http://dist.pinaxproject.com/dev/
 
 Babel==0.9.6
-Django==1.4
+Django==1.4.2
 Jinja2==2.6
 MarkupSafe==0.15
 South==0.7.5
@@ -65,3 +65,4 @@ uuid==1.30
 Pygments==1.5
 gunicorn==19.1
 six==1.7.3
+elasticsearch==1.1.1
