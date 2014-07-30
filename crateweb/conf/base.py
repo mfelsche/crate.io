@@ -150,9 +150,9 @@ INSTALLED_APPS = [
     "djcelery",
 
     # Search
-    "haystack",
-    "celery_haystack",
-    "saved_searches",
+    #"haystack",
+    #"celery_haystack",
+    #"saved_searches",
 
     # Database
     "south",
@@ -175,9 +175,9 @@ INSTALLED_APPS = [
     # project
     "crate.web.theme",
     "crate.web.packages",
-    "crate.web.search",
+    #"crate.web.search",
     "crate.web.history",
-    "crate.web.lists",
+    #"crate.web.lists",
     "crate.web.utils",
     "crate.pypi",
 
@@ -254,8 +254,6 @@ CELERY_TASK_RESULT_EXPIRES = 7 * 24 * 60 * 60  # 7 Days
 CELERYD_HIJACK_ROOT_LOGGER = False
 
 CELERYBEAT_SCHEDULER = "djcelery.schedulers.DatabaseScheduler"
-
-HAYSTACK_SEARCH_RESULTS_PER_PAGE = 15
 
 AWS_QUERYSTRING_AUTH = False
 AWS_S3_SECURE_URLS = False

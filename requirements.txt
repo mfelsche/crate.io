@@ -10,7 +10,6 @@ anyjson==0.3.3
 bleach==1.1.1
 boto==2.3.0
 celery==2.5.5
-celery-haystack==0.4
 certifi==0.0.8
 chardet==1.0.1
 -e git+https://github.com/crateio/crate.web.git#egg=crate.web
@@ -19,7 +18,6 @@ eventlet==0.9.16
 django-admin-tools==0.5.1
 django-appconf==0.5
 django-celery==2.5.5
--e git+https://github.com/toastdriven/django-haystack.git#egg=django-haystack
 django-hosts==0.4.2
 django-jsonfield==0.8.7
 django-model-utils==1.1.0
@@ -65,4 +63,3 @@ uuid==1.30
 Pygments==1.5
 gunicorn==19.1
 six==1.7.3
-elasticsearch==1.1.1
