@@ -23,7 +23,6 @@ django-jsonfield==0.8.7
 django-model-utils==1.1.0
 django-picklefield==0.2.1
 django-redis-cache==0.9.3
-django-secure==0.1.2
 django-social-auth==0.6.9
 django-staticfiles==1.2.1
 django-storages==1.1.4
