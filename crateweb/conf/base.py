@@ -97,7 +97,6 @@ JINJA_CONFIG = {
 
 MIDDLEWARE_CLASSES = [
     "django_hosts.middleware.HostsMiddleware",
-    "djangosecure.middleware.SecurityMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -173,7 +172,7 @@ INSTALLED_APPS = [
     # Utility
     "django_hosts",
     "storages",
-    "djangosecure",
+    #"djangosecure",
 
     # Templating
     "jingo",
