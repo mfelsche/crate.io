@@ -113,37 +113,12 @@ if "REDIS_URL" in os.environ:
 
 SITE_ID = 3
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-
 SERVER_EMAIL = "server@crate.io"
 DEFAULT_FROM_EMAIL = "support@crate.io"
 
-PACKAGE_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
-PACKAGE_FILE_STORAGE_OPTIONS = {
-    "bucket": os.environ["PACKAGE_BUCKET"],
-    "custom_domain": os.environ["PACKAGE_DOMAIN"],
-}
-
-DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
-STATICFILES_STORAGE = "crateweb.storage.CachedStaticS3BotoStorage"
-
-STATICFILES_S3_OPTIONS = {
-    "bucket": "crate-static-production",
-    "custom_domain": "dtl9zya2lik3.cloudfront.net",
-    "secure_urls": True,
-}
-
-STATIC_URL = "https://dtl9zya2lik3.cloudfront.net/"
+STATIC_URL = "https://crate.io/packages/"
 
 ADMIN_MEDIA_PREFIX = STATIC_URL + "admin/"
-
-AWS_STORAGE_BUCKET_NAME = "crate-media-production"
-AWS_S3_CUSTOM_DOMAIN = "media.crate-cdn.com"
-
-AWS_STATS_BUCKET_NAME = "crate-logs"
-AWS_STATS_LOG_REGEX = "^(cloudfront\.production/|cloudfront/production/packages/)"
-
-INTERCOM_APP_ID = "79qt2qu3"
 
 SIMPLE_API_URL = "https://simple.crate.io/"
 
@@ -159,20 +134,3 @@ SESSION_COOKIE_HTTPONLY = True
 SESSION_ENGINE = "django.contrib.sessions.backends.cached_db"
 
 SECRET_KEY = os.environ["SECRET_KEY"]
-
-EMAIL_HOST = os.environ["EMAIL_HOST"]
-EMAIL_PORT = int(os.environ["EMAIL_PORT"])
-EMAIL_HOST_USER = os.environ["EMAIL_HOST_USER"]
-EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
-EMAIL_USE_TLS = True
-
-AWS_ACCESS_KEY_ID = os.environ["AWS_ACCESS_KEY_ID"]
-AWS_SECRET_ACCESS_KEY = os.environ["AWS_SECRET_ACCESS_KEY"]
-
-INTERCOM_USER_HASH_KEY = os.environ["INTERCOM_USER_HASH_KEY"]
-
-GITHUB_APP_ID = os.environ["GITHUB_APP_ID"]
-GITHUB_API_SECRET = os.environ["GITHUB_API_SECRET"]
-
-BITBUCKET_CONSUMER_KEY = os.environ["BITBUCKET_CONSUMER_KEY"]
-BITBUCKET_CONSUMER_SECRET = os.environ["BITBUCKET_CONSUMER_SECRET"]

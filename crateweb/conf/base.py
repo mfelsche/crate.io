@@ -21,6 +21,8 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "crate",
+        "HOST": "127.0.0.1",
+        "PORT": "5432"
     }
 }
 
@@ -254,18 +256,5 @@ CELERY_TASK_RESULT_EXPIRES = 7 * 24 * 60 * 60  # 7 Days
 CELERYD_HIJACK_ROOT_LOGGER = False
 
 CELERYBEAT_SCHEDULER = "djcelery.schedulers.DatabaseScheduler"
-
-AWS_QUERYSTRING_AUTH = False
-AWS_S3_SECURE_URLS = False
-
-AWS_HEADERS = {
-    "Cache-Control": "max-age=31556926",
-}
-
-
-METRON_SETTINGS = {
-    "google": {3: "UA-28759418-1"},
-    "gauges": {3: "4f1e4cd0613f5d7003000002"}
-}
 
 ADMIN_TOOLS_INDEX_DASHBOARD = "crate.web.dashboard.CrateIndexDashboard"
