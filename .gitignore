@@ -31,3 +31,4 @@ crateweb/site_media/
 
 # Gondor Site Key
 .gondor/site_key
+/.idea/

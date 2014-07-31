@@ -29,7 +29,7 @@ LOGGING = {
         },
         "sentry": {
             "level": "ERROR",
-            "class": "raven.contrib.django.handlers.SentryHandler",
+            "class": "logging.StreamHandler",
         },
     },
     "root": {
@@ -116,7 +116,7 @@ SITE_ID = 3
 SERVER_EMAIL = "server@crate.io"
 DEFAULT_FROM_EMAIL = "support@crate.io"
 
-STATIC_URL = "https://crate.io/packages/"
+STATIC_URL = "https://crate.io/static/"
 
 ADMIN_MEDIA_PREFIX = STATIC_URL + "admin/"
 

@@ -26,6 +26,14 @@ DATABASES = {
     }
 }
 
+HAYSTACK_CONNECTIONS = {
+  "default": {
+    "ENGINE": "haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine",
+    "URL": "http://127.0.0.1:9200/",
+    "INDEX_NAME": "crate-dev",
+  },
+}
+
 TIME_ZONE = "UTC"
 LANGUAGE_CODE = "en-us"
 
@@ -152,9 +160,9 @@ INSTALLED_APPS = [
     "djcelery",
 
     # Search
-    #"haystack",
-    #"celery_haystack",
-    #"saved_searches",
+    "haystack",
+    "celery_haystack",
+    "saved_searches",
 
     # Database
     "south",
@@ -177,9 +185,9 @@ INSTALLED_APPS = [
     # project
     "crate.web.theme",
     "crate.web.packages",
-    #"crate.web.search",
+    "crate.web.search",
     "crate.web.history",
-    #"crate.web.lists",
+    "crate.web.lists",
     "crate.web.utils",
     "crate.pypi",
 
