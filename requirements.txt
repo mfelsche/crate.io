@@ -62,4 +62,4 @@ uuid==1.30
 Pygments==1.5
 gunicorn==19.1
 six==1.7.3
-elasticsearch=1.1.1
+elasticsearch==1.1.1
