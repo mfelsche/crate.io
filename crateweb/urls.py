@@ -16,8 +16,8 @@ handler500 = "pinax.views.server_error"
 
 urlpatterns = patterns("",
     url(r"^$", Search.as_view(), name="home"),
-    url(r"^admin/", include(admin.site.urls)),
-    url(r"^admin_tools/", include("admin_tools.urls")),
+#    url(r"^admin/", include(admin.site.urls)),
+#    url(r"^admin_tools/", include("admin_tools.urls")),
     url(r"^packages/", include("crate.web.packages.urls")),
     url(r"^users/", include("crate.web.lists.urls")),
 
