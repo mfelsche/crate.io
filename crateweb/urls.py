@@ -19,6 +19,7 @@ urlpatterns = patterns("",
     url(r"^admin/", include(admin.site.urls)),
     url(r"^admin_tools/", include("admin_tools.urls")),
     url(r"^packages/", include("crate.web.packages.urls")),
+    url(r"^users/", include("crate.web.lists.urls")),
 
     url(r"^stats/", include("crate.web.packages.stats.urls")),
     url(r"^externally-hosted/$", "crate.web.packages.views.fuck_the_status_quo"),
