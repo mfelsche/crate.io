@@ -22,6 +22,7 @@ urlpatterns = patterns("",
 
     url(r"^stats/", include("crate.web.packages.stats.urls")),
     url(r"^externally-hosted/$", "crate.web.packages.views.fuck_the_status_quo"),
+    url(r"^", include("crate.web.search.urls")),
 )
 
 
