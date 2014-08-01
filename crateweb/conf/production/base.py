@@ -116,11 +116,11 @@ SITE_ID = 3
 SERVER_EMAIL = "server@crate.io"
 DEFAULT_FROM_EMAIL = "support@crate.io"
 
-STATIC_URL = "https://crate.io/static/"
+STATIC_URL = "https://crate.io/packages/static/"
 
 ADMIN_MEDIA_PREFIX = STATIC_URL + "admin/"
 
-SIMPLE_API_URL = "https://simple.crate.io/"
+SIMPLE_API_URL = "https://crate.io/packages"
 
 SESSION_COOKIE_SECURE = True
 SESSION_COOKIE_HTTPONLY = True

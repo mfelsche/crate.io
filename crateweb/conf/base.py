@@ -21,6 +21,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "crate",
+        "USER": "crate",
         "HOST": "127.0.0.1",
         "PORT": "5432"
     }
