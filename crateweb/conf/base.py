@@ -107,7 +107,7 @@ MIDDLEWARE_CLASSES = [
     "account.middleware.LocaleMiddleware",
 ]
 
-ROOT_URLCONF = "crateweb.urls"
+ROOT_URLCONF = "crateweb.root_urls"
 ROOT_HOSTCONF = "crateweb.hosts"
 
 DEFAULT_HOST = "default"
