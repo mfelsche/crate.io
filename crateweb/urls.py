@@ -12,7 +12,6 @@ from crate.web.packages.views import ReleaseDetail
 
 handler500 = "pinax.views.server_error"
 
-
 urlpatterns = patterns("",
     url(r"^$", Search.as_view(), name="home"),
     url(r"^users/", include("crate.web.lists.urls")),
